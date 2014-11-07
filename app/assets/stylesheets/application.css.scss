@@ -1,0 +1,193 @@
+/**
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any Css/Less files within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+ * can be referenced here using a relative path.
+ *
+ * It's not advisable to add code directly here, but if you do, it'll appear in whatever order it 
+ * gets included (e.g. say you have require_tree . then the code will appear after all the directories 
+ * but before any files alphabetically greater than 'application.css' 
+ *
+ *= require_tree .
+ */
+
+/* Reset via https://raw.githubusercontent.com/murtaugh/HTML5-Reset/master/assets/css/reset.css
+ * Resets common preset styles to default normalized values
+ * Simple style reset, only modifies alignment, background, and size
+ */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, 
+q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, 
+aside, figure, footer, header, menu, nav, section, time, mark, audio, video, 
+details, summary 
+{
+	margin:         0;
+	padding:        0;
+	border:         0;
+	font-size:      100%;
+	font-weight:    normal;
+	vertical-align: baseline;
+	background:     transparent;
+}
+
+*
+{
+	font-family: Verdana;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: bold;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+h5 { font-size: 12px; }
+h6 { font-size: 4px; }
+
+a, a:visited
+{
+	color: 	         #024680;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color:         #680246;
+	border-bottom: 1px dashed;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+body
+{
+	background: #EFEFEF;
+	padding:    5px;
+}
+
+header, footer
+{
+	display:    block;
+	overflow:   hidden;
+	background: #DFDFDF;
+	padding:    20px 0px;
+
+	#copyleft
+	{
+		display: inline-block;
+		margin:  10px;
+		float:   right;
+
+		p
+		{
+			text-align: right;
+		}
+
+		img
+		{
+			width:    14px;
+			height:   14px;
+			position: relative;
+			top:      1px;
+		}
+	}
+}
+
+header
+{
+	h1
+	{
+		display: inline-block;
+		float:   left;
+		margin:  10px;
+	}
+
+	nav
+	{
+		display: inline;
+		float:   right;
+		margin:  20px 10px;
+	}
+
+	nav ul
+	{
+		margin: 0px;
+	}
+
+	nav ul li
+	{
+		display:       inline;
+		padding-right: 5px;
+	}
+}
+
+.content
+{
+	> h2
+	{
+		padding: 10px;
+	}
+
+	> article, > div
+	{
+		padding:     15px 10px;
+		padding-top: 10px;
+	}
+
+	form
+	{
+		background: #EFEFEF;
+		margin:     30px auto;
+		padding:    10px;
+		width:      80%;
+
+		input
+		{
+			width:  50%;
+			margin: 5px;
+		}
+
+		label
+		{
+			display: inline-block;
+			width:   50%;
+		}
+	}
+
+}
+
+#container
+{
+	background: #FAFAFA;
+	width:      85%;
+	margin:     5px auto;
+}
+
+#error, #success, #info
+{
+	text-align: center;
+	font-size:  20px;
+	color:      #000000;
+}
+
+#error
+{
+	background: #FF0000;
+}
+
+#success
+{
+	background: #00FF00;
+}
+
+#info
+{
+	background: #0000FF;
+}
