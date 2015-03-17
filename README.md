@@ -2,6 +2,7 @@
 
 Blogging web app built with the [Laravel PHP framework](http://laravel.com/) v4.2.11
 
+View it [LIVE](http://some-blog.herokuapp.com/)! :tada:
 
 ### Setup
 
@@ -42,4 +43,3 @@ http://culttt.com/2013/11/04/add-asset-pipeline-laravel-4/
 http://culttt.com/2013/08/19/creating-forms-in-laravel-4/
 
 http://culttt.com/2013/08/26/routing-laravel-4/
-
